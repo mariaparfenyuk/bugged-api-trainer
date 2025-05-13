@@ -1,4 +1,4 @@
-class LoginService {
+export default class LoginService {
     constructor() {
         this.users = [
             { username: 'testUser', password: 'testPass' },
@@ -27,5 +27,3 @@ class LoginService {
         return { success: true, message: 'Login successful', statusCode: 201 };
     }
 }
-
-export default LoginService;
