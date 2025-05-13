@@ -1,16 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
-import Home from './pages/Home';
-import ApiTester from './pages/ApiTester';
+import LoginForm from './components/LoginForm';
 
 const App = () => {
     return (
         <div>
-            <Header />
-            <main>
-                <Home />
-                <ApiTester />
-            </main>
+            <h1>Bugged API Trainer</h1>
+            <LoginForm />
         </div>
     );
 };

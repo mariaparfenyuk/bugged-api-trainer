@@ -1,9 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import LoginService from './services/loginService.js';
 import setupSwagger from './swagger.js';
 
 const app = express();
+app.use(cors());
 const loginService = new LoginService();
 
 app.use(bodyParser.json());
