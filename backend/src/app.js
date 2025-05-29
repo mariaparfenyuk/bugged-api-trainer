@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import LoginService from './services/loginService.js';
 import setupSwagger from './swagger.js';
+import registerRoutes from './routes/register.js';
 
 const app = express();
 app.use(cors());
@@ -28,3 +29,5 @@ app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
     console.log(`Swagger docs available at http://localhost:${PORT}/api-docs`);
 });
+
+app.use(registerRoutes);
